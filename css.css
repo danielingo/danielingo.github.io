@@ -23,6 +23,7 @@ p {
 
 #cards {
     display: inline-flex;
+    justify-content: center;
     padding: 10px;
 }
 
