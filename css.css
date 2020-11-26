@@ -1,3 +1,12 @@
+@font-face {
+    font-family: SCE PS3 RD R LATIN;
+    src: url(SCE-PS3-RD-R-LATIN.TTF);
+}
+
+* {
+    font-family: SCE PS3 RD R LATIN;	
+}
+
 a {
     text-decoration: none;
     color: inherit
