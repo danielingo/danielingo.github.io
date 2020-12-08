@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABOUT ME</title>
+		<link rel="stylesheet" href="nier-style.css">
+
+		<style>
+			.large {
+				width: 50%;
+				min-height: 15rem;
+			}
+			.small {
+				width: 35%;
+			}
+			img {
+				width: 9rem;
+				position: center;
+
+			}
+
+
+			.tab button {
+			  text-align: left;
+			  display: block;
+			  margin-bottom: 2rem;
+			  margin-top: 1.5rem;
+			  margin-left: 1rem;
+			  width: 90%;
+
+			}
+			.tabcontent {
+				display: none;
+			}
+			
+
+			button:not(:disabled) {
+			  background-color: #bab5a1;
+			}
+
+			p {
+				margin-left: 1rem;
+			}
+
+
+		</style>
+
+	</head>
+
+	<body>
+		<h1><a href="index.html">DANIEL INGO</a></h1>
+		<h2>ABOUT ME</h2>
+		<div class="container">
+			
+			<figure style="
+			background-color: inherit;
+			
+						"
+
+			>
+
+				<hr style="width: 95%;">
+				
+				<div class="vl">
+			  <div class="tab">
+			  	<button class="tablinks" onmouseover="openTab(event, 'School')">School</button>
+			  <button class="tablinks" onmouseover="openTab(event, 'Work')">Work</button>
+			  <button class="tablinks" onmouseover="openTab(event, 'Hobbies')">Hobbies</button>
+			   </div>
+				</div>
+			 
+
+			</figure>
+
+
+			<figure class="large">
+			  <figcaption>ABOUT ME</figcaption>
+			  
+			  <div id="School" class="tabcontent">
+			  <h3>School</h3>
+			  <p>GSU</p>
+			  <p>GATECH</p>
+			</div>
+
+			<div id="Work" class="tabcontent">
+			  <h3>Work</h3>
+			  <p>B Virus lab</p> 
+			</div>
+
+			<div id="Hobbies" class="tabcontent">
+			  <h3>Hobbies</h3>
+			  <p>BRAZILIAN JIUJITSU!!!</p>
+			  <P>POLAROID PHOTOGRAPHY</P>
+			</div>
+
+			</figure>
+
+
+
+		</div>	
+
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+	</body>
+
+</html>
